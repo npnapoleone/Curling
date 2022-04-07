@@ -1,0 +1,166 @@
+{
+    "name": "CurlingInputActions",
+    "maps": [
+        {
+            "name": "Thrower",
+            "id": "b8ecb50b-908e-442b-9ec6-c19fc6eb789e",
+            "actions": [
+                {
+                    "name": "Throw",
+                    "type": "Button",
+                    "id": "39ffc37e-0ec0-4e38-86e4-00cfcadb537e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "ChangeAngle",
+                    "type": "Button",
+                    "id": "a88765a3-c0b8-4d8a-aed8-a98dde35ad06",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "ChangeSpin",
+                    "type": "Button",
+                    "id": "2cfb5c00-8a21-4caf-947c-d9c65f74fca4",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "f4b6192a-9e99-4cf6-a325-7706084185d4",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Throw",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "17cef719-712d-4556-b43a-c5d26da173aa",
+                    "path": "1DAxis(minValue=-0.1,maxValue=0.1)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ChangeAngle",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "ad48cc80-39fb-443e-90d1-6ec022d8ba3d",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ChangeAngle",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "4aba0d3f-8c31-4804-9339-98a8176eb093",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ChangeAngle",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "a910b380-ed01-4c4a-94d6-a5e0448ae9d7",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "Normalize(min=-1,max=1)",
+                    "groups": "",
+                    "action": "ChangeSpin",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "efc84ecf-59e3-4f08-a306-4fdab549d35c",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ChangeSpin",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "d2d3d586-557e-4c20-a6fa-73731452f2f2",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ChangeSpin",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        },
+        {
+            "name": "Sweeper",
+            "id": "bdeec1c2-ca62-41df-9d6a-2220bd505448",
+            "actions": [
+                {
+                    "name": "SweepIn",
+                    "type": "Button",
+                    "id": "76f0aa94-0c59-4975-9445-ca228298ec12",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SweepOut",
+                    "type": "Button",
+                    "id": "16312136-9dd3-42b3-8a93-42ce0c987aa5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "7338cb03-c888-423f-9669-fab69ec0f529",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SweepIn",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "127f1f0f-8938-4a46-ac80-8a6478fe28ed",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SweepOut",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
